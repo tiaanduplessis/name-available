@@ -1,0 +1,49 @@
+{
+  "name": "name-available",
+  "version": "1.0.0",
+  "description": "Check if package name is available on npm",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/name-available.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/name-available",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/name-available/issues",
+    "email": "tiaanduplessis@hotmail.com"
+  },
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "bin": {
+    "available": "cli.js"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "pretest": "npm run lint:fix",
+    "test": "jest --env=node",
+    "test:watch": "npm test -- --watch",
+    "coverage": "npm test -- --coverage",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "package",
+    "name",
+    "npm",
+    "name-available"
+  ],
+  "dependencies": {
+    "puny-req": "~1.0.0",
+    "query-string": "~4.3.4"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "standard": "^10.0.1"
+  }
+}
