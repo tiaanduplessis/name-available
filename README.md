@@ -64,6 +64,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/name-available.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install --save name-available
 # OR
