@@ -8,6 +8,14 @@ test('name-available defined', () => {
 })
 
 test('check if name available', (done) => {
+  nameAvailable('aaaajjjjjkkkklllliiiiasaskaslkasdjklsdjlskjdsalkjdmacslksjd')
+    .then((result) => {
+      expect(result).toBe(true)
+      done()
+    })
+})
+
+test('check if taken name available', (done) => {
   nameAvailable('ava')
     .then((result) => {
       expect(result).toBe(false)
